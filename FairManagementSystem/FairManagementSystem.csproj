@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{914B57DE-72BC-4786-A7F9-5A8E03B907E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FairManagementSystem</RootNamespace>
+    <AssemblyName>FairManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="codentq">
+      <HintPath>..\..\codentq.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\VisitorManager.cs" />
+    <Compile Include="BLL\ZoneManager.cs" />
+    <Compile Include="DAL\VisitorGateway.cs" />
+    <Compile Include="DAL\ZoneGateway.cs" />
+    <Compile Include="Model\Visitor.cs" />
+    <Compile Include="Model\Zone.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="UI\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VisitorEntryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VisitorEntryUI.Designer.cs">
+      <DependentUpon>VisitorEntryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\VisitoReportUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VisitoReportUI.Designer.cs">
+      <DependentUpon>VisitoReportUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VisitorNuimberReportUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\VisitorNuimberReportUI.Designer.cs">
+      <DependentUpon>VisitorNuimberReportUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ZoneType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ZoneType.Designer.cs">
+      <DependentUpon>ZoneType.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="obj\Debug\FairManagementSystem.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\FairManagementSystem.UI.Main.resources" />
+    <EmbeddedResource Include="obj\Debug\FairManagementSystem.UI.VisitoReportUI.resources" />
+    <EmbeddedResource Include="obj\Debug\FairManagementSystem.UI.VisitorNuimberReportUI.resources" />
+    <EmbeddedResource Include="obj\Debug\FairManagementSystem.UI.ZoneTypeEntryUI.resources" />
+    <EmbeddedResource Include="obj\Debug\FairManagementSystem.VisitorEntryUI.resources" />
+    <EmbeddedResource Include="UI\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VisitorEntryUI.resx">
+      <DependentUpon>VisitorEntryUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\VisitoReportUI.resx">
+      <DependentUpon>VisitoReportUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VisitorNuimberReportUI.resx">
+      <DependentUpon>VisitorNuimberReportUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ZoneType.resx">
+      <DependentUpon>ZoneType.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\FairManagementSystem.exe.config" />
+    <None Include="bin\Debug\FairManagementSystem.vshost.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\FairManagementSystem.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\FairManagementSystem.csprojResolveAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\FairManagementSystem.exe" />
+    <Content Include="bin\Debug\FairManagementSystem.pdb" />
+    <Content Include="bin\Debug\FairManagementSystem.vshost.exe" />
+    <Content Include="obj\Debug\FairManagementSystem.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\FairManagementSystem.exe" />
+    <Content Include="obj\Debug\FairManagementSystem.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

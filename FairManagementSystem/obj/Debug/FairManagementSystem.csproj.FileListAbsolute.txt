@@ -1,0 +1,15 @@
+E:\C sharp\FairManagementSystem\FairManagementSystem\bin\Debug\FairManagementSystem.exe.config
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\bin\Debug\FairManagementSystem.exe.config
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.csprojResolveAssemblyReference.cache
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.UI.Main.resources
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.VisitorEntryUI.resources
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.Properties.Resources.resources
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.UI.VisitoReportUI.resources
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.UI.ZoneTypeEntryUI.resources
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.csproj.GenerateResource.Cache
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\bin\Debug\FairManagementSystem.exe
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\bin\Debug\FairManagementSystem.pdb
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.exe
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.pdb
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\bin\Debug\codentq.dll
+D:\C#\TeamProject\FairManagementSystem\FairManagementSystem\obj\Debug\FairManagementSystem.UI.VisitorNuimberReportUI.resources
